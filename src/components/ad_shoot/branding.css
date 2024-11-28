@@ -1,0 +1,8 @@
+.add-image {
+  background-image: url('../../assets/service/ad_shoot/add-shoot.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 20%;
+  background-attachment: fixed;
+}

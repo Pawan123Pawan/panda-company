@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font family */
+body {
+  font-family: 'Inter', sans-serif !important;
+  /* background: #ebebeb; */
+}
+
+/* Box Shadows */
+.myShadow {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.myShadow2 {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.myCard:hover,
+.techShadow:hover {
+  box-shadow: rgba(246, 4, 250, 0.2) 0px 8px 24px;
+}
+
+/* Custom Scrollbar Styles */
+.sidescrollbar::-webkit-scrollbar {
+  width: 3px;
+}
+
+.sidescrollbar::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.sidescrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Background Images */
+.fixed-image {
+  background: url(../src/assets/home/offer-cta.webp) center / cover no-repeat
+    fixed;
+}
+
+.missionImage,
+.web-image,
+.branding,
+.attachedImage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.missionImage {
+  background-image: url(../src/assets/home/mission.jpg);
+}
+
+.web-image {
+  background-image: url(../src/assets/service/web-development/web-image.webp);
+}
+
+.branding {
+  background-image: url(../src/assets/service/branding/branding.jpg);
+}
+
+/* Gradient Animation */
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-text {
+  background-size: 200% 200%;
+  animation: gradientBackground 5s ease infinite;
+}
+
+@keyframes ping {
+  0% {
+    box-shadow: 0 0 0 0 #72006d;
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 101, 0);
+  }
+}
+
+.ping::before {
+  content: '';
+  border-color: inherit;
+  width: 95%;
+  height: 30px;
+  position: absolute;
+  border-radius: 3px;
+  position: absolute;
+  z-index: -1;
+  top: 7px;
+  left: 4px;
+  box-shadow: 0 0 0 0 rgba(37, 211, 101, 0);
+  animation: ping 1.2s infinite;
+}
+.buble::before {
+  border-radius: 20px;
+  height: 22px;
+  width: 90%;
+  top: 8px;
+  left: 8px;
+}
+
+/* Prevent scrolling */
+.no-scroll {
+  overflow: hidden; 
+  height: 100vh; 
+}  

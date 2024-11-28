@@ -1,0 +1,6 @@
+.team_image {
+  top: 1;
+  aspect-ratio: 2/2;
+  object-fit: revert;
+  /* mix-blend-mode: color-burn; */
+}
