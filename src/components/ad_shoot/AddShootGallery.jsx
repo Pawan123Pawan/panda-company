@@ -1,9 +1,9 @@
-import image1 from '../../assets/service/ad_shoot/backpack.jpg';
+import image1 from '../../assets/service/ad_shoot/Backpack.jpg'
 import image2 from '../../assets/service/ad_shoot/Baseball cap.jpg';
 import image3 from '../../assets/service/ad_shoot/smartwatch.jpg';
 import image4 from '../../assets/service/ad_shoot/tote bag.jpg';
 import image5 from '../../assets/service/ad_shoot/earbuds.jpg';
-import image6 from '../../assets/service/ad_shoot/dairy.jpg';
+import image6 from '../../assets/service//ad_shoot/dairy.jpg';
 
 const images = [
   {
